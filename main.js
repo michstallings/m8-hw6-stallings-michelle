@@ -3,3 +3,7 @@ var magicFortunes = ['It is certain.','It is decidedly so.', 'Without a doubt.',
 function shakeBall () {
 	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
 }
+
+var button = document.getElementsByTagName('generator-button')
+
+button.onclick = function() {shakeBall};
