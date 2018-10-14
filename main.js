@@ -12,10 +12,10 @@ yourFortune.appendChild(fortuneTextPlaceHolder);
 
 yourFortune.appendChild(fortuneText);
 
-button.onclick = function() {shakeBall};
+yourFortune.classList.add("fortune-show");
 
 function shakeBall () {
 	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
-}
+};
 
-yourFortune.classList.add("fortune-show");
+button.onclick = function() {shakeBall};
