@@ -4,6 +4,12 @@ function shakeBall () {
 	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
 }
 
-var button = document.getElementsByTagName('generator-button')
+var button = document.getElementsByTagName('generator-button');
 
 button.onclick = function() {shakeBall};
+
+var yourFortune = document.querySelector("#fortune-wrapper p span");
+
+var fortuneTextPlaceHolder = document.createTextNode('');
+
+yourFortune.appendChild(fortuneTextPlaceHolder);
