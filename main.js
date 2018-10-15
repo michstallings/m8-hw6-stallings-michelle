@@ -25,6 +25,8 @@ var yourFortune = document.querySelector("#fortune-wrapper p span");
 
 var fortuneTextPlaceHolder = document.createTextNode('');
 
+var buttonRemove = document.getElementById("generator-button");
+
 
 function shakeBall () {
 	var fortuneText = document.createTextNode(magicFortunes[0]);
@@ -37,6 +39,8 @@ function shakeBall () {
 
 	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
 
-	
+	buttonRemove.removeChild(button);	
+
 };
+
 
