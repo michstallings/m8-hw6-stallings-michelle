@@ -25,13 +25,13 @@ var yourFortune = document.querySelector("#fortune-wrapper p span");
 
 var fortuneTextPlaceHolder = document.createTextNode('');
 
+yourFortune.appendChild(fortuneTextPlaceHolder);
+
 var buttonRemove = document.getElementById("generator-button");
 
 
 function shakeBall () {
 	var fortuneText = document.createTextNode(magicFortunes[0]);
-
-	yourFortune.appendChild(fortuneTextPlaceHolder);
 
 	yourFortune.appendChild(fortuneText);
 
