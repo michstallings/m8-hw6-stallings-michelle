@@ -31,13 +31,14 @@ var buttonRemove = document.getElementById("generator-button");
 
 
 function shakeBall () {
-	var fortuneText = document.createTextNode(magicFortunes[0]);
+
+	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
+
+	var fortuneText = document.createTextNode(magicFortunes)[0];
 
 	yourFortune.appendChild(fortuneText);
 
 	yourFortune.classList.add("fortune-show");
-
-	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
 
 	buttonRemove.removeChild(button);	
 
