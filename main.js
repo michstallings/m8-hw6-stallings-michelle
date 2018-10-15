@@ -19,7 +19,7 @@ var magicFortunes = [
 'Outlook not so good.', 
 'Very doubtful.'];
 
-var button = document.getElementsByTagName("button"[0]);
+var button = document.getElementsByTagName("button")[0];
 
 var yourFortune = document.querySelector("#fortune-wrapper p span");
 
