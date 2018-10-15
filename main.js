@@ -44,4 +44,6 @@ function shakeBall () {
 
 };
 
+button.onclick = function() {shakeBall()};
+
 
