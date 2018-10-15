@@ -34,7 +34,7 @@ function shakeBall () {
 
 	magicFortunes.sort (function(a, b){return 0.5 - Math.random()});
 
-	var fortuneText = document.createTextNode(magicFortunes)[0];
+	var fortuneText = document.createTextNode(magicFortunes[0]);
 
 	yourFortune.appendChild(fortuneText);
 
